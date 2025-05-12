@@ -13,19 +13,3 @@
 ## Figma
 
 [Pesonal Website Figma Design File](https://www.figma.com/design/lADoOvfsJm0ZmEbaUsiaXk/Personal-Website?node-id=0-1&t=kpTCRuexuSO6urtu-1)
-
-## Node.js
-
-ACM UCR Website Template runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
-
-## Next.js
-
-This project is built using [Next.js](https://nextjs.org), a React framework. Next.js is automatically installed when you install all dependencies for this project.
-
-
-
-### Build the Website
-
-```bash
-npm run build
-```
