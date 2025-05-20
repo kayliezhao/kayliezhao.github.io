@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-kay-blue-400: #062357;
+  --color-kay-blue-100: #98b4e9;
+  --color-kay-blue-200: #5f90ea;
+  --color-kay-blue-300: #42619b;
+  --color-kay-grayblue: #8f9ec3;
+  --color-kay-purple-100: #c0bfec;
+  /* --color-kay-gray-300: #e8e8e8; */
+  --color-kay-nightSky: linear-gradient(
+      180deg,
+      var(--blue-400, #062357) 0%,
+      #0d4bbd 100%
+    )
+    /* background: linear-gradient(180deg, var(--blue-400, #062357) 0%, #0D4BBD 100%); */;
+}
