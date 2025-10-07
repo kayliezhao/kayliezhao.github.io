@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="font-outfit flex h-screen w-screen items-center justify-center">
+    <div className="font-outfit flex h-screen items-center justify-center bg-gray-300">
       Home
     </div>
   );
