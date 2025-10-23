@@ -1,7 +1,7 @@
 import "./globals.css";
 // import { Inter } from "next/font/google";
 // import { Outfit } from "next/font/google";
-import { Jaro } from "next/font/google"; // Use a supported font
+import { Jost, Pixelify_Sans } from "next/font/google"; // Use a supported font
 // import { Pixelify_Sans } from "next/font/google"; // Use a supported font
 
 import { ReactQueryClientProvider } from "@/utils/react-query";
@@ -15,15 +15,18 @@ import Navigation from "@/components/Navigation";
 //   variable: "--font-outfit",
 //   subsets: ["latin"],
 // });
-const jaro = Jaro({
-  variable: "--font-jaro",
+
+const jost = Jost({
+  variable: "--font-jost",
   weight: "400",
   subsets: ["latin"],
 });
-// const pixel = Pixelify_Sans({
-//   variable: "--font-pixel",
-//   subsets: ["latin"],
-// });
+
+const pixel = Pixelify_Sans({
+  variable: "--font-pixel",
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -37,7 +40,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={jaro.className}>
+      <body className={` ${jost.variable} ${pixel.variable}`}>
         <ReactQueryClientProvider>
           <Navigation />
           {children}

@@ -8,6 +8,7 @@
   --color-kay-grayblue: #8f9ec3;
   --color-kay-purple-100: #c0bfec;
   --color-gray-300: #6d6e88;
+  --color-bg-blue-: #4fadec;
   /* --color-kay-gray-300: #e8e8e8; */
   --color-kay-nightSky: linear-gradient(
       180deg,
@@ -15,4 +16,10 @@
       #0d4bbd 100%
     )
     /* background: linear-gradient(180deg, var(--blue-400, #062357) 0%, #0D4BBD 100%); */;
+}
+.font-jost {
+  font-family: var(--font-jost), sans-serif;
+}
+.font-pixel {
+  font-family: var(--font-pixel), sans-serif;
 }
