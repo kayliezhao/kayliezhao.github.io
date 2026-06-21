@@ -1,5 +1,5 @@
 import "./globals.css";
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 // import { Outfit } from "next/font/google";
 import { Jost, Pixelify_Sans } from "next/font/google"; // Use a supported font
 // import { Pixelify_Sans } from "next/font/google"; // Use a supported font
@@ -7,10 +7,11 @@ import { Jost, Pixelify_Sans } from "next/font/google"; // Use a supported font
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navigation from "@/components/Navigation";
 
-// const inter = Inter({
-//   variable: "--font-inter",
-//   subsets: ["latin"],
-// });
+const inter = Inter({
+  variable: "--font-inter",
+  weight: "300",
+  subsets: ["latin"],
+});
 // const outfit = Outfit({
 //   variable: "--font-outfit",
 //   subsets: ["latin"],
@@ -40,7 +41,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={` ${jost.variable} ${pixel.variable}`}>
+      <body className={` ${jost.variable} ${pixel.variable} ${inter.variable}`}>
         <ReactQueryClientProvider>
           <Navigation />
           {children}
