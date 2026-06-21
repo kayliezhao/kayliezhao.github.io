@@ -15,7 +15,7 @@ const Navigation = () => {
   //   };
 
   return (
-    <nav className="position:fixed sticky top-0 z-10 bg-black p-3 opacity-80">
+    <nav className="sticky top-0 z-50 bg-black p-3 opacity-80">
       <div className="mx-3 flex items-center gap-x-4 text-lg font-bold text-white opacity-100">
         <div className="flex">
           <Image src={logo} alt="logo" className="w-8" />

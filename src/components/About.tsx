@@ -11,7 +11,7 @@ import DevPost from "@/public/DevPost.svg";
 
 const About = () => {
   return (
-    <div className="relative">
+    <div className="font-outfit relative flex h-screen items-center justify-center bg-gray-300">
       <div className="col-span-2 flex">
         <Image src={card} alt="Kaylie Designer Card" className="m-10 w-[30%]" />
         <Image
@@ -35,15 +35,27 @@ const About = () => {
                 games, making art, and going on walks.
               </div>
             </div>
-            <div className="center grid grid-cols-4 gap-3 p-[5%]">
+            <div className="center grid grid-cols-4 gap-x-3 gap-y-2 p-[5%]">
               <Image
                 src={linkedin}
                 alt="linkedin icon"
-                className="relative left-[10%] mr-50"
+                className="col-start-1 row-start-1"
               />
-              <Image src={DevPost} alt="DevPost icon" className="" />
-              <Image src={github} alt="github icon" className="" />
-              <Image src={email} alt="email icon" className="relative" />
+              <Image
+                src={DevPost}
+                alt="DevPost icon"
+                className="col-start-3 row-start-1"
+              />
+              <Image
+                src={github}
+                alt="github icon"
+                className="col-start-2 row-start-2"
+              />
+              <Image
+                src={email}
+                alt="email icon"
+                className="col-start-4 row-start-2"
+              />
             </div>
           </div>
         </div>
