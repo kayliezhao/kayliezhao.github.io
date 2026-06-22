@@ -4,7 +4,6 @@ import linkedin from "../../public/whitelinkedin.svg";
 import github from "../../public/whitegithub.svg";
 import email from "../../public/whiteemail.svg";
 import devpost from "../../public/whitedevpost.svg";
-import discord from "../../public/whitediscord.svg";
 
 const Footer = () => {
   return (
@@ -17,11 +16,46 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex gap-6">
-          <Image src={linkedin} alt="LinkedIn" className="w-12" />
-          <Image src={github} alt="GitHub" className="w-12" />
-          <Image src={devpost} alt="DevPost" className="w-12" />
-          <Image src={discord} alt="Discord" className="w-12" />
-          <Image src={email} alt="Email" className="w-12" />
+          <a
+            href="https://www.linkedin.com/in/kaylie-zhao/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={linkedin}
+              alt="LinkedIn"
+              className="w-12 transition-all duration-300 hover:scale-110"
+            />
+          </a>
+          <a
+            href="https://github.com/kayliezhao"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={github}
+              alt="GitHub"
+              className="w-12 transition-all duration-300 hover:scale-110"
+            />
+          </a>
+          <a
+            href="https://devpost.com/zhaokaylie?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={devpost}
+              alt="DevPost"
+              className="w-12 transition-all duration-300 hover:scale-110"
+            />
+          </a>
+          <a href="mailto:zhaokaylie@gmail.com">
+            <Image
+              src={email}
+              alt="Email"
+              className="w-12 transition-all duration-300 hover:scale-110"
+            />
+          </a>
         </div>
       </div>
       <hr className="my-4 border-white" />
