@@ -41,7 +41,9 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={` ${jost.variable} ${pixel.variable} ${inter.variable}`}>
+      <body
+        className={`bg-gray-300 ${jost.variable} ${pixel.variable} ${inter.variable}`}
+      >
         <ReactQueryClientProvider>
           <Navigation />
           {children}

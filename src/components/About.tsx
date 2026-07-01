@@ -11,7 +11,7 @@ import DevPost from "@/public/DevPost.svg";
 
 const About = () => {
   return (
-    <div className="font-outfit relative flex h-screen items-center justify-center bg-gray-300">
+    <div className="font-outfit relative flex h-screen items-center justify-center">
       <div className="col-span-2 flex">
         <Image src={card} alt="Kaylie Designer Card" className="m-10 w-[30%]" />
         <Image
