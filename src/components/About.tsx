@@ -11,52 +11,59 @@ import DevPost from "@/public/DevPost.svg";
 
 const About = () => {
   return (
-    <div className="font-outfit relative flex h-screen items-center justify-center">
-      <div className="col-span-2 flex">
-        <Image src={card} alt="Kaylie Designer Card" className="m-10 w-[30%]" />
+    <div className="font-outfit s:py-0 relative flex min-h-screen items-center justify-center py-10">
+      <Image
+        src={green}
+        alt="bg green"
+        className="absolute -top-[5%] right-0 z-0 w-[60%] bg-fixed md:block"
+      />
+
+      <div className="relative z-10 flex flex-col items-center gap-6 md:flex-row md:items-center md:gap-0">
+        {/* card */}
         <Image
-          src={green}
-          alt="bg green"
-          className="absolute -top-[20%] right-[0%] z-1 w-[50%] bg-fixed"
+          src={card}
+          alt="Kaylie Designer Card"
+          className="w-[55%] sm:w-[40%] md:m-10 md:w-[30%]"
         />
 
-        <div className="relative z-10 col-span-2 flex items-center gap-4">
-          <div className="relative flex w-full flex-col items-center">
+        {/* right-side content */}
+        <div className="flex w-full flex-col items-center">
+          <Image
+            src={kay}
+            alt="Kaylie Name Label"
+            className="relative top-5 z-10 w-[30%] sm:w-[20%] md:right-50 md:w-[15%]"
+          />
+          <div className="relative w-[85%] sm:w-[80%]">
+            <Image src={textbox} alt="textbox" className="z-0 w-full" />
+            <div className="font-pixel absolute inset-0 flex items-center justify-center p-2 text-center text-base text-black sm:p-4 sm:text-sm md:p-6 md:text-xl">
+              Computer Science with Business Applications Major who loves
+              designing and web development at UCR. For fun, I enjoy playing
+              games, making art, and going on walks.
+            </div>
+          </div>
+
+          {/* staggered social icons */}
+          <div className="grid grid-cols-4 gap-x-3 gap-y-2 p-[5%]">
             <Image
-              src={kay}
-              alt="Kaylie Name Label"
-              className="relative top-5 right-50 z-10 w-[15%]"
+              src={linkedin}
+              alt="linkedin icon"
+              className="col-start-1 row-start-1 w-8 md:w-auto"
             />
-            <div className="relative w-4/5">
-              <Image src={textbox} alt="textbox" className="z-0 w-full" />
-              <div className="font-pixel m:text-medium font-large absolute inset-0 flex items-center justify-center p-6 text-center text-black">
-                Computer Science with Business Applications Major who loves
-                designing and web development at UCR. For fun, I enjoy playing
-                games, making art, and going on walks.
-              </div>
-            </div>
-            <div className="center grid grid-cols-4 gap-x-3 gap-y-2 p-[5%]">
-              <Image
-                src={linkedin}
-                alt="linkedin icon"
-                className="col-start-1 row-start-1"
-              />
-              <Image
-                src={DevPost}
-                alt="DevPost icon"
-                className="col-start-3 row-start-1"
-              />
-              <Image
-                src={github}
-                alt="github icon"
-                className="col-start-2 row-start-2"
-              />
-              <Image
-                src={email}
-                alt="email icon"
-                className="col-start-4 row-start-2"
-              />
-            </div>
+            <Image
+              src={DevPost}
+              alt="DevPost icon"
+              className="col-start-3 row-start-1 w-8 md:w-auto"
+            />
+            <Image
+              src={github}
+              alt="github icon"
+              className="col-start-2 row-start-2 w-8 md:w-auto"
+            />
+            <Image
+              src={email}
+              alt="email icon"
+              className="col-start-4 row-start-2 w-8 md:w-auto"
+            />
           </div>
         </div>
       </div>

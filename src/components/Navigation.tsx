@@ -29,7 +29,7 @@ const Navigation = () => {
           <div className="hover:text-kay-blue-300">PROJECTS</div>
           <div className="hover:text-kay-blue-300">ART</div>
           <div className="hover:bg-kay-blue-300 rounded-xl border-2 bg-white px-2 text-center text-gray-900 hover:text-white">
-            RESUME
+            RESUME/CV
           </div>
         </div>
       </div>
