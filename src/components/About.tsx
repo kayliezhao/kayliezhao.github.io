@@ -43,27 +43,19 @@ const About = () => {
           </div>
 
           {/* staggered social icons */}
-          <div className="grid grid-cols-4 gap-x-3 gap-y-2 p-[5%]">
-            <Image
-              src={linkedin}
-              alt="linkedin icon"
-              className="col-start-1 row-start-1 w-8 md:w-auto"
-            />
-            <Image
-              src={DevPost}
-              alt="DevPost icon"
-              className="col-start-3 row-start-1 w-8 md:w-auto"
-            />
-            <Image
-              src={github}
-              alt="github icon"
-              className="col-start-2 row-start-2 w-8 md:w-auto"
-            />
-            <Image
-              src={email}
-              alt="email icon"
-              className="col-start-4 row-start-2 w-8 md:w-auto"
-            />
+          <div className="grid grid-cols-4 gap-x-8 gap-y-2 p-[5%]">
+            <a href="https://www.linkedin.com/in/kaylie-zhao/" target="_blank" rel="noopener noreferrer" className="col-start-1 row-start-1">
+              <Image src={linkedin} alt="linkedin icon" className="w-8 transition-all duration-300 hover:scale-110 md:w-auto" />
+            </a>
+            <a href="https://devpost.com/zhaokaylie?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" rel="noopener noreferrer" className="col-start-3 row-start-1">
+              <Image src={DevPost} alt="DevPost icon" className="w-8 transition-all duration-300 hover:scale-110 md:w-auto" />
+            </a>
+            <a href="https://github.com/kayliezhao" target="_blank" rel="noopener noreferrer" className="col-start-2 row-start-2">
+              <Image src={github} alt="github icon" className="w-8 transition-all duration-300 hover:scale-110 md:w-auto" />
+            </a>
+            <a href="mailto:zhaokaylie@gmail.com" className="col-start-4 row-start-2">
+              <Image src={email} alt="email icon" className="w-8 transition-all duration-300 hover:scale-110 md:w-auto" />
+            </a>
           </div>
         </div>
       </div>

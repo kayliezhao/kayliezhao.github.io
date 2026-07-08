@@ -15,7 +15,7 @@ const Footer = () => {
             Let&apos;s Connect!
           </p>
         </div>
-        <div className="flex gap-6">
+        <div className="flex items-center gap-6">
           <a
             href="https://www.linkedin.com/in/kaylie-zhao/"
             target="_blank"
