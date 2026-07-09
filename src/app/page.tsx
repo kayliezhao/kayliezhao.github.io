@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <About />
       <Experience />
+      <Projects />
       <Footer />
     </div>
   );
