@@ -11,7 +11,10 @@ import DevPost from "@/public/DevPost.svg";
 
 const About = () => {
   return (
-    <div className="font-outfit s:py-0 relative flex min-h-screen items-center justify-center py-10">
+    <div
+      id="about"
+      className="font-outfit s:py-0 relative flex min-h-screen items-center justify-center py-10"
+    >
       <Image
         src={green}
         alt="bg green"

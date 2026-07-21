@@ -5,7 +5,8 @@ import pDevpostIcon from "../../public/pDevPost.svg";
 import pGithubIcon from "../../public/pGitHub.svg";
 import pFigmaIcon from "../../public/pFigma.svg";
 import pSiteIcon from "../../public/pSite.svg";
-// import pSlidesIcon from "../../public/pSlides.svg";
+import pSlidesIcon from "../../public/pSlides.svg";
+import pLinkedInIcon from "../../public/pLinkedin.svg";
 
 type ProjectIcon = {
   src: StaticImageData | string;
@@ -24,36 +25,142 @@ type Project = {
 
 const projects: Project[] = [
   {
-    image: "/placeholder.png",
-    name: "PROJECT NAME",
-    dateRange: "2023",
+    image: "/pFlush.webp",
+    name: "Flush",
+    dateRange: "2026",
     description:
-      "Short description of the project, what it does, the problem it solves, and your role in it.",
-    projectLink: "https://github.com/kayliezhao",
+      "Flush is a local public restroom finder that allows users to find nearby restrooms. It uses Google Gemini API, Python, Google Slides API, and Google Drive API. It contains a three-layer architecture with the interface, engine, and storage layers.",
+    projectLink: "https://www.youtube.com/watch?v=-DinhDqDZD8",
     icons: [
-      { src: pSiteIcon, alt: "Website", href: "https://github.com/kayliezhao" },
+      {
+        src: pGithubIcon,
+        alt: "GitHub",
+        href: "https://github.com/UCR-CS180/final-project-kaylie-zhao",
+      },
+      {
+        src: pSiteIcon,
+        alt: "YouTube",
+        href: "https://www.youtube.com/watch?v=-DinhDqDZD8",
+      },
     ],
   },
   {
-    image: "/placeholder.png",
-    name: "PROJECT NAME",
-    dateRange: "2023",
+    image: "/pNear.webp",
+    name: "Feature Selection with Nearest Neighbor Classifier",
+    dateRange: "Feb-Mar 2026",
     description:
-      "Short description of the project, what it does, the problem it solves, and your role in it.",
-    projectLink: "https://github.com/kayliezhao",
+      "The nearest neighbor classifier is a classifier that can be used to identify what class an object may belong to, essentially solving the classification problem. Created using Python, NumPy, and Google Sheets for graphing.",
+    projectLink: "https://github.com/kayliezhao/cs170_lab_2",
     icons: [
-      { src: pSiteIcon, alt: "Website", href: "https://github.com/kayliezhao" },
+      {
+        src: pSiteIcon,
+        alt: "Website",
+        href: "https://github.com/kayliezhao/cs170_lab_2",
+      },
+      { src: pDocsIcon, alt: "Report", href: "/pNearest.pdf" },
     ],
   },
   {
-    image: "/placeholder.png",
-    name: "PROJECT NAME",
-    dateRange: "2023",
+    image: "/pNorth.webp",
+    name: "NorthStar - Disaster Response Coordination Platform",
+    dateRange: "Feb 2026",
     description:
-      "Short description of the project, what it does, the problem it solves, and your role in it.",
-    projectLink: "https://github.com/kayliezhao",
+      "🏆 First-place winner of the 2026 AI Tech Venture Challenge for developing an innovative disaster relief solution. Designed and prototyped an AI-powered disaster response coordination platform. Built a streamlined system to mitigate logistical chaos and optimize communication during the critical first 48 hours of an emergency.",
+    projectLink: "https://northstarai.figma.site/",
     icons: [
-      { src: pSiteIcon, alt: "Website", href: "https://github.com/kayliezhao" },
+      {
+        src: pSiteIcon,
+        alt: "Website",
+        href: "https://northstarai.figma.site/",
+      },
+      {
+        src: pLinkedInIcon,
+        alt: "LinkedIn",
+        href: "https://www.linkedin.com/posts/kaylie-zhao_im-proud-to-share-that-arielle-haryanto-ugcPost-7433407867497439232-WBtv/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEd0_0EB-RMJpzXDZOUf_FGTBthYPZ4iLSs",
+      },
+    ],
+  },
+  {
+    image: "/pPuzzle.webp",
+    name: "8 Puzzle Search NEEED TO UPDATE WITH THE REPORT!!!",
+    dateRange: "Feb 2026",
+    description:
+      "CS170 project on the 8 Puzzle using uniform cost search, A* with mismatched with the Misplaced Tile heuristic and A* with the Manhattan Distance heuristic. It shows the traces of the 8-puzzle and how to solve it with three different algorithms.",
+    projectLink: "https://github.com/kayliezhao/cs170_lab_1",
+    icons: [
+      {
+        src: pSiteIcon,
+        alt: "Website",
+        href: "https://github.com/kayliezhao/cs170_lab_1",
+      },
+      { src: pDocsIcon, alt: "Report", href: "/pEight.pdf" },
+    ],
+  },
+  {
+    image: "/pCog.webp",
+    name: "Cognitive Companion",
+    dateRange: "Apr - Jun 2025",
+    description:
+      "Pitched and prototyped (Figma) a mobile app concept supporting neurodivergent individuals, authored functional specs and user personas. Reached pitch-ready stage, but not funded/built.",
+    projectLink:
+      "https://www.figma.com/proto/iDLrwDZtyF1EXVHaHEru2e/cognitive-companion?node-id=4-2&p=f&t=b7TOIXHlYyHzfcJO-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+    icons: [
+      {
+        src: pFigmaIcon,
+        alt: "Figma",
+        href: "https://www.figma.com/proto/iDLrwDZtyF1EXVHaHEru2e/cognitive-companion?node-id=4-2&p=f&t=b7TOIXHlYyHzfcJO-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+      },
+      {
+        src: pDocsIcon,
+        alt: "PDF",
+        href: "https://docs.google.com/document/d/1tLuY6zQdLU1sG5K3ZVZh1VIr3un4DgGW/edit?usp=sharing&ouid=109767031481028025892&rtpof=true&sd=true",
+      },
+      {
+        src: pSlidesIcon,
+        alt: "Slides",
+        href: "https://docs.google.com/presentation/d/1QcsQvXMSRVct9RCNn32NG2KRn9rNURnZk-1iMMWAg08/edit?usp=sharing",
+      },
+    ],
+  },
+  {
+    image: "/pTaskly.svg",
+    name: "Taskly Calendar",
+    dateRange: "Sep - Dec 2024",
+    description:
+      "A cross-platform C++ command-line application designed for efficient task management and scheduling. Developed throuhgout a series of scrum meetings following Kanban boards, and utilizing Agile methodologies.",
+    projectLink:
+      "https://github.com/cs100/final-project-kzhao051-ngrig007-yliu954-jpinc005",
+    icons: [
+      {
+        src: pGithubIcon,
+        alt: "GitHub",
+        href: "https://github.com/cs100/final-project-kzhao051-ngrig007-yliu954-jpinc005",
+      },
+    ],
+  },
+  {
+    image: "/pRCat.webp",
+    name: "R’Cat’s Cosmic Quest",
+    dateRange: "Nov 2024",
+    description:
+      "R’s Cosmic Quest is an educational game created in hopes of spreading awareness about space waste. Created with Figma, JavaScript, React, Motion, and Tailwind CSS.",
+    projectLink: "https://r-cat-s-cosmic-quest.vercel.app/",
+    icons: [
+      {
+        src: pSiteIcon,
+        alt: "Website",
+        href: "https://r-cat-s-cosmic-quest.vercel.app/",
+      },
+      {
+        src: pFigmaIcon,
+        alt: "Figma",
+        href: "https://www.figma.com/design/HMaZJM9NdWAOYHWg50Jve8/R-Cat-s-Cosmic-Quest?node-id=0-1&p=f&t=yKPxK5Xr1lhdT2Nh-0",
+      },
+      {
+        src: pGithubIcon,
+        alt: "GitHub",
+        href: "https://github.com/shirleyduong/r-cat-s-cosmic-quest",
+      },
     ],
   },
   {
@@ -218,7 +325,7 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section className="font-outfit px-16 py-[2%] text-white">
+    <section id="projects" className="font-outfit px-16 py-[2%] text-white">
       <div className="flex items-center gap-4">
         <h2 className="text-3xl font-semibold whitespace-nowrap">Projects</h2>
       </div>

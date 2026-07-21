@@ -181,7 +181,7 @@ const experiences: {
 
 const Experience = () => {
   return (
-    <section className="font-outfit px-16 py-[2%] text-white">
+    <section id="experience" className="font-outfit px-16 py-[2%] text-white">
       <div className="flex items-center gap-4">
         <h2 className="text-3xl font-semibold whitespace-nowrap">Experience</h2>
       </div>

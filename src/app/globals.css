@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+#about,
+#experience,
+#projects,
+#art {
+  scroll-margin-top: 64px;
+}
+
 @theme {
   --color-kay-blue-400: #062357;
   --color-kay-blue-100: #98b4e9;
