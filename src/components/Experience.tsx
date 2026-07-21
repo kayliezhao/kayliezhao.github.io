@@ -8,11 +8,9 @@ const experiences: {
     company: "Highlander News",
     roles: [
       {
-        title: "Incoming Technology Director",
-        dateRange: "Sept 2026 - Jun 2027",
-        bullets: [
-          // "TBD...",
-        ],
+        title: "Technology Director",
+        dateRange: "Jul 2026 - Jun 2027",
+        bullets: ["WIP"],
       },
     ],
   },
