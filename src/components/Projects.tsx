@@ -82,7 +82,7 @@ const projects: Project[] = [
   },
   {
     image: "/pPuzzle.webp",
-    name: "8 Puzzle Search NEEED TO UPDATE WITH THE REPORT!!!",
+    name: "8 Puzzle Search",
     dateRange: "Feb 2026",
     description:
       "CS170 project on the 8 Puzzle using uniform cost search, A* with mismatched with the Misplaced Tile heuristic and A* with the Manhattan Distance heuristic. It shows the traces of the 8-puzzle and how to solve it with three different algorithms.",

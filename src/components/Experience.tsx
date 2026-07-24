@@ -10,7 +10,7 @@ const experiences: {
       {
         title: "Technology Director",
         dateRange: "Jul 2026 - Jun 2027",
-        bullets: ["WIP"],
+        bullets: ["Updating..."],
       },
     ],
   },
@@ -48,7 +48,13 @@ const experiences: {
         bullets: [
           "Collaborated in a group to implement a website within 10 weeks",
           "Projects: Women in the Law, UCR Highlander Gloves",
-          "Created projects in <strong> JavaScript/TypeScript, Node.js, React.js, Tailwind CSS, HTML, Motion UI</strong>",
+          <>
+            Created projects in{" "}
+            <strong>
+              JavaScript/TypeScript, Node.js, React.js, Tailwind CSS, HTML,
+              Motion UI
+            </strong>
+          </>,
         ],
       },
     ],
