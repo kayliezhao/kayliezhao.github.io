@@ -97,7 +97,7 @@ const projects: Project[] = [
     ],
   },
   {
-    image: "/pCog.webp",
+    image: "/PCog.webp",
     name: "Cognitive Companion",
     dateRange: "Apr - Jun 2025",
     description:
@@ -123,7 +123,7 @@ const projects: Project[] = [
     ],
   },
   {
-    image: "/pTaskly.svg",
+    image: "/pTASKLY.svg",
     name: "Taskly Calendar",
     dateRange: "Sep - Dec 2024",
     description:

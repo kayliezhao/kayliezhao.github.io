@@ -10,7 +10,7 @@ const experiences: {
       {
         title: "Technology Director",
         dateRange: "Jul 2026 - Jun 2027",
-        bullets: ["Updating..."],
+        bullets: ["DESCRIPTION COMING SOON!"],
       },
     ],
   },
@@ -187,25 +187,32 @@ const experiences: {
 
 const Experience = () => {
   return (
-    <section id="experience" className="font-outfit px-16 py-[2%] text-white">
+    <section
+      id="experience"
+      className="font-outfit px-6 py-[2%] text-white md:px-16"
+    >
       <div className="flex items-center gap-4">
-        <h2 className="text-3xl font-semibold whitespace-nowrap">Experience</h2>
+        <h2 className="text-2xl font-semibold whitespace-nowrap md:text-3xl">
+          Experience
+        </h2>
       </div>
       <div className="mb-[1%] h-[2px] w-full bg-white" />
 
       <div className="flex flex-col gap-10">
         {experiences.map((exp, i) => (
           <div key={i}>
-            <p className="text-2xl font-bold">{exp.company}</p>
+            <p className="text-xl font-bold md:text-2xl">{exp.company}</p>
 
             <div
-              className={`mt-2 ml-6 pl-6 ${exp.roles.length > 1 ? "border-l-2 border-white" : ""}`}
+              className={`mt-2 ml-4 pl-4 md:ml-6 md:pl-6 ${exp.roles.length > 1 ? "border-l-2 border-white" : ""}`}
             >
               {exp.roles.map((role, j) => (
                 <div key={j} className={j !== 0 ? "mt-6" : ""}>
                   <div className="flex items-baseline justify-between">
-                    <p className="text-lg font-bold">{role.title}</p>
-                    <p className="text-sm font-semibold text-white">
+                    <p className="text-base font-bold md:text-lg">
+                      {role.title}
+                    </p>
+                    <p className="text-xs font-semibold text-white md:text-sm">
                       {role.dateRange}
                     </p>
                   </div>
